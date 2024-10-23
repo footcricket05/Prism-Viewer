@@ -1,0 +1,28 @@
+package:
+  name: prism_viewer
+  version: 1.0
+
+source:
+  path: ..
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed"
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pyqt
+    - numpy
+    - pythonocc-core  
+
+about:
+  home: https://github.com/footcricket05
+  license: MIT
+
+extra:
+  recipe-maintainers:
+    - Shaurya Singh Srinet
